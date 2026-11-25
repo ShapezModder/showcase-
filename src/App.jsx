@@ -547,9 +547,11 @@ export default function App() {
                   <a href="https://www.makersneedmore.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--assam-green)', fontWeight: 700, textDecoration: 'none' }}>www.makersneedmore.com</a> · <a href="https://margdrishti.cv" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--saffron)', fontWeight: 700, textDecoration: 'none' }}>margdrishti.cv</a>
                 </p>
               </div>
-              <div className="numbered-item">
-                <div className="big-num num-teal">EU</div>
-                <h3>Official Institutional Endorsement</h3>
+              <div className="numbered-item" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <img src="/brand/eternal-university-logo.png" alt="Eternal University" style={{ height: '44px', width: 'auto', objectFit: 'contain' }} />
+                  <h3 style={{ margin: 0 }}>Official Institutional Endorsement</h3>
+                </div>
                 <p>
                   Confirmed under <strong>Ref No. EU/ACE&amp;T/2026/31</strong> (03/11/2026) by Akal College of Engineering &amp; Technology, Eternal University, Sirmaur, signed by the HoD (Dept. of CSE) and Dean (ACET) for field-testing and NESFIC-D-05 submission to PWD, Government of Assam.
                 </p>
