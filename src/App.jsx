@@ -534,31 +534,39 @@ export default function App() {
                 </tbody>
               </table>
             </div>
-            <div className="numbered-grid">
-              <div className="numbered-item" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <img src="/brand/mnm-logo.png" alt="Makers Need More" style={{ height: '36px', width: 'auto', objectFit: 'contain' }} />
-                  <h3 style={{ margin: 0 }}>Makers Need More (MnM)</h3>
+            <div className="team-wide-stack">
+              <div className="numbered-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                <div style={{ flex: '1 1 420px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
+                    <img src="/brand/mnm-logo.png" alt="Makers Need More" style={{ height: '38px', width: 'auto', objectFit: 'contain' }} />
+                    <h3 style={{ margin: 0 }}>Makers Need More (MnM)</h3>
+                  </div>
+                  <p>
+                    Founders of <strong>Makers Need More (MnM)</strong>, an independent student-led initiative fostering practical engineering, open-source development, community initiatives, and real-world problem solving.
+                  </p>
                 </div>
-                <p>
-                  Founders of <strong>Makers Need More (MnM)</strong>, an independent student-led initiative fostering practical engineering, open-source development, community initiatives, and real-world problem solving.
-                </p>
-                <p>
-                  <a href="https://www.makersneedmore.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--assam-green)', fontWeight: 700, textDecoration: 'none' }}>www.makersneedmore.com</a> · <a href="https://margdrishti.cv" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--saffron)', fontWeight: 700, textDecoration: 'none' }}>margdrishti.cv</a>
-                </p>
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                  <a href="https://www.makersneedmore.com" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ textDecoration: 'none' }}>www.makersneedmore.com</a>
+                  <a href="https://margdrishti.cv" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ textDecoration: 'none' }}>margdrishti.cv</a>
+                </div>
               </div>
-              <div className="numbered-item" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <img src="/brand/eternal-university-logo.png" alt="Eternal University" style={{ height: '44px', width: 'auto', objectFit: 'contain' }} />
-                  <h3 style={{ margin: 0 }}>Official Institutional Endorsement</h3>
+              <div className="endorsement-wide-card">
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
+                    <img src="/brand/eternal-university-logo.png" alt="Eternal University" style={{ height: '52px', width: 'auto', objectFit: 'contain' }} />
+                    <h3 style={{ margin: 0, fontSize: '18px', fontWeight: 800, color: 'var(--ink)' }}>Official Institutional Endorsement</h3>
+                  </div>
+                  <p style={{ margin: '0 0 10px', fontSize: '14.5px', color: 'var(--ink-secondary)' }}>
+                    Formally recognised and confirmed under <strong>Ref No. EU/ACE&amp;T/2026/31</strong> (dated <strong>03/11/2026</strong>) by Akal College of Engineering &amp; Technology (ACET), Eternal University, Baru Sahib, Sirmaur (Himachal Pradesh).
+                  </p>
+                  <p style={{ margin: 0, fontSize: '14px', color: 'var(--ink-muted)' }}>
+                    Signed by the Head of Department (Dept. of CSE) and Dean (ACET) for official government communication, field-testing, and NESFIC-D-05 submission to the Public Works Department, Government of Assam.
+                  </p>
                 </div>
-                <p>
-                  Confirmed under <strong>Ref No. EU/ACE&amp;T/2026/31</strong> (03/11/2026) by Akal College of Engineering &amp; Technology, Eternal University, Sirmaur, signed by the HoD (Dept. of CSE) and Dean (ACET) for field-testing and NESFIC-D-05 submission to PWD, Government of Assam.
-                </p>
                 <button
                   type="button"
                   onClick={() => setLightboxPhoto({ src: '/brand/eternal-university-certificate.jpg', caption: 'Eternal University · Letter of Confirmation (Ref No. EU/ACE&T/2026/31)' })}
-                  style={{ padding: 0, border: '1px solid var(--border-warm)', borderRadius: '10px', overflow: 'hidden', background: '#ffffff', cursor: 'pointer', textAlign: 'left' }}
+                  style={{ padding: 0, border: '1px solid var(--border-warm)', borderRadius: '10px', overflow: 'hidden', background: '#ffffff', cursor: 'pointer', textAlign: 'left', width: '100%' }}
                 >
                   <img
                     src="/brand/eternal-university-certificate.jpg"

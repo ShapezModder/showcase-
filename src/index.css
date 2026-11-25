@@ -548,6 +548,21 @@ body {
   background: var(--bg-ivory);
   border-color: var(--saffron);
 }
+.team-wide-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.endorsement-wide-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
 .callout-banner {
   background: var(--assam-green-soft);
   border: 1px solid #b7e1c4;
@@ -656,7 +671,7 @@ body {
   .stat-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .numbered-grid {
+  .numbered-grid, .endorsement-wide-card {
     grid-template-columns: 1fr;
   }
   .meerut-grid {
