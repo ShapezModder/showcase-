@@ -107,7 +107,7 @@ export default function App() {
               <div>
                 <div className="hero-badge">NESFIC 2026 · Road Surface Defect Detection &amp; Maintenance Prioritisation</div>
                 <h1 className="hero-heading">
-                  <span className="accent-saffron">MargDrishti</span> — Practical AI Road Audits for <span className="accent-green">Assam PWD</span>
+                  <span className="accent-saffron">MargDrishti</span> — <span className="accent-green">Practical AI Road Audits</span>
                 </h1>
                 <p className="section-lead" style={{ marginBottom: 0 }}>
                   Formerly developed as StreetIQ, <strong>MargDrishti (मार्गदृष्टि)</strong> turns everyday patrol vehicles, two-wheelers, and standard smartphones into automated road-condition auditors. As a vehicle moves, the platform detects cracks and potholes, maps the drivable lane, tracks surrounding traffic safety, records exact GPS and speed, and delivers tamper-proof inspection reports directly to government engineers.
