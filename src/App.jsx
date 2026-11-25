@@ -246,7 +246,7 @@ export default function App() {
               Foreign highway datasets do not represent Indian roads. We took MargDrishti onto live streets in <strong>Meerut City</strong>—capturing mixed traffic, two-wheelers, auto-rickshaws, dense tree shadows, uneven shoulders, and real asphalt distresses—and fine-tuned our thresholds for Indian conditions. Click any photo to inspect full detections.
             </p>
             <div className="meerut-grid">
-              {MEERUT_PHOTOS.map((item, idx) => (
+              {MEERUT_PHOTOS.map((item) => (
                 <button
                   key={item.src}
                   type="button"
@@ -254,10 +254,6 @@ export default function App() {
                   onClick={() => setLightboxPhoto(item)}
                 >
                   <img src={item.src} alt={item.caption} loading="lazy" />
-                  <div className="meerut-card-foot">
-                    <span>#{idx + 1} · {item.caption.replace('Meerut Pilot · ', '')}</span>
-                    <span style={{ color: 'var(--saffron)', fontWeight: 700 }}>Inspect</span>
-                  </div>
                 </button>
               ))}
             </div>
