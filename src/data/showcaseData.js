@@ -125,5 +125,5 @@ export const HACKATHON_ACHIEVEMENTS = [
   { event: 'DSH Hacks V2', result: 'Winner · Tin Computer Growth Plan' },
   { event: 'Zero Origin', result: 'Round 1 Shortlisted' },
   { event: 'GenAI Dev Hackathon', result: 'Winner · Best UI/UX' },
-  { event: 'DSH Hacks V1', result: 'Participation Winner' }
+  { event: 'DSH Hacks V1', result: 'Winner' }
 ];
