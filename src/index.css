@@ -521,6 +521,33 @@ body {
 .sev-high { background: #fee2e2; color: #b91c1c; }
 .sev-med { background: #fef3c7; color: #b45309; }
 .sev-low { background: #dcfce7; color: #15803d; }
+.drive-action-wrap {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.drive-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--border-warm);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(17, 24, 39, 0.05);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.drive-link-btn:hover {
+  background: var(--bg-ivory);
+  border-color: var(--saffron);
+}
 .callout-banner {
   background: var(--assam-green-soft);
   border: 1px solid #b7e1c4;
