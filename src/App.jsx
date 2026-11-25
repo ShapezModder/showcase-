@@ -251,7 +251,7 @@ export default function App() {
                   key={item.src}
                   type="button"
                   className="meerut-card"
-                  onClick={() => setLightboxPhoto(item)}
+                  onClick={() => setLightboxPhoto({ src: item.src })}
                 >
                   <img src={item.src} alt={item.caption} loading="lazy" />
                 </button>
@@ -595,9 +595,11 @@ export default function App() {
       {lightboxPhoto && (
         <div className="lightbox-backdrop" onClick={() => setLightboxPhoto(null)} role="dialog" aria-modal="true">
           <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <img src={lightboxPhoto.src} alt={lightboxPhoto.caption} />
-            <div className="lightbox-bar">
-              <strong style={{ fontSize: '14px', color: 'var(--ink)' }}>{lightboxPhoto.caption}</strong>
+            <img src={lightboxPhoto.src} alt={lightboxPhoto.caption || 'Field testing preview'} />
+            <div className="lightbox-bar" style={{ justifyContent: lightboxPhoto.caption ? 'space-between' : 'flex-end' }}>
+              {lightboxPhoto.caption && (
+                <strong style={{ fontSize: '14px', color: 'var(--ink)' }}>{lightboxPhoto.caption}</strong>
+              )}
               <button type="button" className="btn-primary" style={{ padding: '7px 16px', fontSize: '13px' }} onClick={() => setLightboxPhoto(null)}>
                 Close
               </button>
