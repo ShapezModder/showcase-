@@ -109,15 +109,13 @@ export const TEAM_MEMBERS = [
     name: 'Manika Kutiyal',
     institution: 'ACET, Eternal University, Sirmaur',
     program: 'BCA (Hons. with Research) · Year 3',
-    email: 'kutiyalmanika@gmail.com',
-    phone: '+91 90845 88662'
+    email: 'kutiyalmanika@gmail.com'
   },
   {
     name: 'Aditya Verma',
     institution: 'Lovely Professional University, Phagwara',
     program: 'Engineering & AI Systems',
-    email: 'adityaverma9777@gmail.com',
-    phone: '+91 91611 56774'
+    email: 'adityaverma9777@gmail.com'
   }
 ];
 export const HACKATHON_ACHIEVEMENTS = [

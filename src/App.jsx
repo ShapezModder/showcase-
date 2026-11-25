@@ -507,7 +507,7 @@ export default function App() {
                   <p style={{ marginBottom: '6px' }}><strong>{member.institution}</strong></p>
                   <p style={{ marginBottom: '6px' }}>{member.program}</p>
                   <p>
-                    <a href={`mailto:${member.email}`} style={{ color: 'var(--saffron)', fontWeight: 700, textDecoration: 'none' }}>{member.email}</a> · {member.phone}
+                    <a href={`mailto:${member.email}`} style={{ color: 'var(--saffron)', fontWeight: 700, textDecoration: 'none' }}>{member.email}</a>
                   </p>
                 </div>
               ))}
