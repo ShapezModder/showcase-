@@ -9,7 +9,8 @@ export const SECTIONS = [
   { id: 'surveyor', num: '08', label: 'Surveyor & Add Device' },
   { id: 'official', num: '09', label: 'Official Admin Portal' },
   { id: 'integrity', num: '10', label: 'Anti-Tampering & Loopholes' },
-  { id: 'cost-hardware', num: '11', label: 'Assam Cost & Hardware' }
+  { id: 'cost-hardware', num: '11', label: 'Assam Cost & Hardware' },
+  { id: 'team', num: '12', label: 'Team & Achievements' }
 ];
 export const PILOT_VIDEOS = [
   {
@@ -102,4 +103,27 @@ export const LOOPHOLE_ROWS = [
     loophole: 'Phone screen locking mid-patrol in wireless camera mode',
     fix: 'Screen Wake Lock + auto-reacquire: MobileCameraPage acquires navigator.wakeLock and keeps live GPS, speed, and video streaming active across patrols.'
   }
+];
+export const TEAM_MEMBERS = [
+  {
+    name: 'Manika Kutiyal',
+    institution: 'ACET, Eternal University, Sirmaur',
+    program: 'BCA (Hons. with Research) · Year 3',
+    email: 'kutiyalmanika@gmail.com',
+    phone: '+91 90845 88662'
+  },
+  {
+    name: 'Aditya Verma',
+    institution: 'Lovely Professional University, Phagwara',
+    program: 'Engineering & AI Systems',
+    email: 'adityaverma9777@gmail.com',
+    phone: '+91 91611 56774'
+  }
+];
+export const HACKATHON_ACHIEVEMENTS = [
+  { event: 'Moonshot Hackathon', result: 'Top 100 Finalist' },
+  { event: 'DSH Hacks V2', result: 'Winner · Tin Computer Growth Plan' },
+  { event: 'Zero Origin', result: 'Round 1 Shortlisted' },
+  { event: 'GenAI Dev Hackathon', result: 'Winner · Best UI/UX' },
+  { event: 'DSH Hacks V1', result: 'Participation Winner' }
 ];

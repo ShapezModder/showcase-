@@ -5,7 +5,9 @@ import {
   MEERUT_PHOTOS,
   DEFECT_CLASSES,
   VEHICLE_CLASSES,
-  LOOPHOLE_ROWS
+  LOOPHOLE_ROWS,
+  TEAM_MEMBERS,
+  HACKATHON_ACHIEVEMENTS
 } from './data/showcaseData';
 import {
   HeroRoadSurveyIllustration,
@@ -488,6 +490,69 @@ export default function App() {
                 <div className="big-num num-saffron">02</div>
                 <h3>Closed Software &amp; Hardware Tiers</h3>
                 <p>Designed to ship as a self-contained closed software bundle (local PostgreSQL/PostGIS + FastAPI + React UI) with zero internet needed on patrol. Even an <strong>NVIDIA RTX 3060 or RTX 3050</strong> runs full tri-layer scans smoothly at 12+ FPS; higher GPUs scale resolution and frame rate further.</p>
+              </div>
+            </div>
+          </section>
+          <section
+            id="team"
+            ref={(el) => { sectionRefs.current.team = el; }}
+            className="doc-section"
+          >
+            <div className="section-kicker">12 · Team, Endorsement &amp; Achievements</div>
+            <h2 className="section-title">The Team Behind MargDrishti</h2>
+            <p className="section-lead">
+              We are a two-member student engineering team building practical AI tools for public infrastructure, formally endorsed by Eternal University (<strong>Ref No. EU/ACE&amp;T/2026/31</strong>, dated 03/11/2026) with academic mentorship from Er. Rajeev Thakur (HoD, Dept. of CSE, ACET) and Lovely Professional University, Phagwara.
+            </p>
+            <div className="numbered-grid" style={{ marginBottom: '22px' }}>
+              {TEAM_MEMBERS.map((member, idx) => (
+                <div key={member.email} className="numbered-item">
+                  <div className={`big-num ${idx === 0 ? 'num-saffron' : 'num-green'}`}>0{idx + 1}</div>
+                  <h3>{member.name}</h3>
+                  <p style={{ marginBottom: '6px' }}><strong>{member.institution}</strong></p>
+                  <p style={{ marginBottom: '6px' }}>{member.program}</p>
+                  <p>
+                    <a href={`mailto:${member.email}`} style={{ color: 'var(--saffron)', fontWeight: 700, textDecoration: 'none' }}>{member.email}</a> · {member.phone}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="table-wrap" style={{ marginBottom: '22px' }}>
+              <table className="gov-table">
+                <thead>
+                  <tr>
+                    <th style={{ width: '42%' }}>Selected Hackathon / Competition</th>
+                    <th>Recognition / Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {HACKATHON_ACHIEVEMENTS.map((item) => (
+                    <tr key={item.event}>
+                      <td><strong>{item.event}</strong></td>
+                      <td><span className="sev-pill sev-low">{item.result}</span></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="numbered-grid">
+              <div className="numbered-item" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <img src="/brand/mnm-logo.png" alt="Makers Need More" style={{ height: '36px', width: 'auto', objectFit: 'contain' }} />
+                  <h3 style={{ margin: 0 }}>Makers Need More (MnM)</h3>
+                </div>
+                <p>
+                  Founders of <strong>Makers Need More (MnM)</strong>, an independent student-led initiative fostering practical engineering, open-source development, community initiatives, and real-world problem solving.
+                </p>
+                <p>
+                  <a href="https://www.makersneedmore.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--assam-green)', fontWeight: 700, textDecoration: 'none' }}>www.makersneedmore.com</a> · <a href="https://margdrishti.cv" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--saffron)', fontWeight: 700, textDecoration: 'none' }}>margdrishti.cv</a>
+                </p>
+              </div>
+              <div className="numbered-item">
+                <div className="big-num num-teal">EU</div>
+                <h3>Official Institutional Endorsement</h3>
+                <p>
+                  Confirmed under <strong>Ref No. EU/ACE&amp;T/2026/31</strong> (03/11/2026) by Akal College of Engineering &amp; Technology, Eternal University, Sirmaur, signed by the HoD (Dept. of CSE) and Dean (ACET) for field-testing and NESFIC-D-05 submission to PWD, Government of Assam.
+                </p>
               </div>
             </div>
           </section>
